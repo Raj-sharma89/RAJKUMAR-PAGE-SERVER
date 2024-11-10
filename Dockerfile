@@ -1,4 +1,4 @@
-FROM: #base image
-RUN: pip install requests
-COMMAND: python main.py
-ROOT: #port on 5000
+FROM: create base image
+CMD pip install requests
+RUN python main.py
+PORT: 5000
