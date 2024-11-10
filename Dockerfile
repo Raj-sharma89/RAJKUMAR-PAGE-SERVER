@@ -8,7 +8,7 @@ WORKDIR /'flask --app'
 COPY . /'flask --app'
 
 # Install the application dependencies
-RUN pip install Flask requests -r requirements.txt
+RUN pip install -r requirements.txt
 
 # Define the entry point for the container
 CMD ["flask", "run", "--host=0.0.0.0"]
