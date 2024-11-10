@@ -2,10 +2,10 @@
 FROM python: 3.12.2
 
 # Set the working directory in the container
-WORKDIR /'flask --app'
+WORKDIR /app
 
 # Copy the application files into the working directory
-COPY . /'flask --app'
+COPY . /app
 
 # Install the application dependencies
 RUN pip install -r requirements.txt
